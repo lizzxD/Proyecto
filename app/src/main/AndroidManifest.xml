@@ -24,6 +24,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.lizz.caliz.hola" />
         </activity>
+        <activity
+            android:name=".alarma"
+            android:label="@string/title_activity_alarma" >
+
+        </activity>
     </application>
 
 </manifest>
