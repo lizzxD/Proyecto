@@ -1,5 +1,7 @@
 package com.example.lizz.caliz;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -11,7 +13,7 @@ import android.widget.TextView;
 
 
 public class hola extends ActionBarActivity {
-    public final static String EXTRA_MESSAGE = "com..example.lizz.caliz.MESSAGE";
+    public final static String EXTRA_MESSAGE = "com.example.lizz.caliz.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +36,19 @@ public class hola extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        /*if (id == R.id.action_settings) {
             return true;
+        }*/
+
+        switch (id){
+            case R.id.action_about:
+
+                openDialog();
+                return true;
+
+            case R.id.action_settings:
+
+                return true;
         }
 
         return super.onOptionsItemSelected(item);
@@ -47,5 +60,40 @@ public class hola extends ActionBarActivity {
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
+    }
+
+    public void openDialog(){
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(hola.this);
+
+        // set title
+        alertDialogBuilder.setTitle("About");
+
+        // set dialog message
+        alertDialogBuilder
+                .setMessage("Proyecto")
+                .setCancelable(false)
+                .setPositiveButton("Abrir",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,int id) {
+                        // if this button is clicked, close
+                        // current activity
+                        //MainActivity.this.finish();
+                        Intent activar = new Intent(hola.this, alarma.class);
+                        startActivity(activar);
+                    }
+                })
+                .setNegativeButton("Cancelar",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,int id) {
+                        // if this button is clicked, just close
+                        // the dialog box and do nothing
+                        dialog.cancel();
+                    }
+                });
+
+        // create alert dialog
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        // show it
+        alertDialog.show();
+
     }
 }

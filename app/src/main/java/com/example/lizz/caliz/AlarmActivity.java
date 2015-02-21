@@ -39,8 +39,8 @@ public class AlarmActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarma);
         alarmTimePicker = (TimePicker) findViewById(R.id.alarmTimePicker);
-        alarmTextView = (TextView) findViewById(R.id.alarmText);
-        ToggleButton alarmToggle = (ToggleButton) findViewById(R.id.alarmToggle);
+        //alarmTextView = (TextView) findViewById(R.id.alarmText);
+        //ToggleButton alarmToggle = (ToggleButton) findViewById(R.id.alarmToggle);
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
     }
 
