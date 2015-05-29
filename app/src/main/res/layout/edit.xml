@@ -10,13 +10,13 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:maxLines="2"
-        android:hint="Message" >
+        android:hint="Nombre del Medicamento" >
     </EditText>
     
     <CheckBox
         android:id="@+id/sound_cb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Play ringtone" />    
+        android:text="Reproducir Sonido" />
 
 </LinearLayout>

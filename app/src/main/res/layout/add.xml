@@ -15,14 +15,14 @@
 	        android:layout_height="wrap_content"
 	        android:ems="10"
 	        android:maxLines="2"
-	        android:hint="Message" >
+	        android:hint="Nombre del Medicamento" >
 	    </EditText>
 	    
 	    <CheckBox
 	        android:id="@+id/sound_cb"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:text="Play ringtone" />    
+	        android:text="Reproducir Sonido" />
 	
 	    <ToggleButton
 	        android:id="@+id/toggleButton1"
@@ -31,10 +31,10 @@
 	        android:layout_gravity="center_horizontal"
 	        android:onClick="onClick"
 	        android:background="@drawable/type_selector"
-	        android:padding="5dip"       
+	        android:padding="10dip"
 	        android:textColor="#ffffff"        
-	        android:textOn=" Once    Repeat "
-	        android:textOff=" Once    Repeat " />
+	        android:textOn="Una vez   Repetir"
+	        android:textOff="Una vez   Repetir" />
 	
 	    <ViewSwitcher
 	        android:id="@+id/view_switcher"
@@ -65,7 +65,7 @@
 			    android:layout_height="wrap_content"
 			    android:background="@null"
 			    android:onClick="create"
-			    android:src="@drawable/ok" />	        
+			    android:src="@drawable/ok" /> //Cambiar imagen del boton
 	    </LinearLayout>	    
 	
 	</LinearLayout>

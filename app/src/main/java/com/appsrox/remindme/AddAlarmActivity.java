@@ -1,9 +1,5 @@
 package com.appsrox.remindme;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
@@ -31,6 +27,10 @@ import com.appsrox.remindme.model.Alarm;
 import com.appsrox.remindme.model.AlarmMsg;
 import com.appsrox.remindme.model.AlarmTime;
 import com.appsrox.remindme.model.DbHelper;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 /**
  * @author appsrox.com
@@ -86,7 +86,7 @@ public class AddAlarmActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("New Reminder");
+        setTitle("Nuevo Recodatorio");
         setContentView(R.layout.add);
         findViews();
         db = RemindMePills.db;
@@ -118,7 +118,7 @@ public class AddAlarmActivity extends Activity {
 //		outState.putInt("date", datePicker.getDayOfMonth());
 //		outState.putInt("month", datePicker.getMonth());
 //		outState.putInt("year", datePicker.getYear());
-		outState.putInt("hour", timePicker.getCurrentHour());
+		outState.putInt("hora", timePicker.getCurrentHour());
 //		outState.putInt("min", timePicker.getCurrentMinute());
 		outState.putCharSequence("fromdate", fromdateText.getText());
 		outState.putCharSequence("todate", todateText.getText());

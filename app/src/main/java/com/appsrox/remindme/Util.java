@@ -1,11 +1,5 @@
 package com.appsrox.remindme;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import android.graphics.Shader.TileMode;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
@@ -13,8 +7,14 @@ import android.view.View;
 
 import com.appsrox.remindme.model.DbHelper;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
- * @author appsrox.com
+ *
  *
  */
 public class Util {
