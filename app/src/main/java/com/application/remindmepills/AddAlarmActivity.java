@@ -183,7 +183,7 @@ public class AddAlarmActivity extends Activity {
 			}
 			try {
 				if (sdf.parse(fromdateText.getText().toString()).after(sdf.parse(todateText.getText().toString()))) {
-					Toast.makeText(this, "La fecha inicial es después de la fecha final 'PENDEJO' ", Toast.LENGTH_SHORT).show();
+					Toast.makeText(this, "La fecha inicial es despues de la fecha final.", Toast.LENGTH_SHORT).show();
 					return false;
 				}
 			} catch (ParseException e) {}			

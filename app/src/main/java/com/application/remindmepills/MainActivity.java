@@ -231,7 +231,7 @@ public class MainActivity extends ListActivity {
 	public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
 		if (v.getId() == android.R.id.list) {
 			getMenuInflater().inflate(R.menu.context_menu, menu);
-			menu.setHeaderTitle("Seleccione una opción");
+			menu.setHeaderTitle("Seleccione una opcion");
 			menu.setHeaderIcon(R.drawable.ic_dialog_menu_generic);
 			
 			AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
