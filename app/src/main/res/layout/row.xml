@@ -40,7 +40,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@id/date_tv"
-        android:textColor="#587498"
+        android:textColor="#2a79ff"
         android:textSize="18sp" />
     
     <TextView

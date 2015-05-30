@@ -7,25 +7,19 @@
 	<LinearLayout
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
-	    android:orientation="vertical"
-	    android:background="#004ed0" >
+		android:background="#004ed0"
+		android:orientation="vertical">
 	
 	    <EditText
 	        android:id="@+id/msg_et"
-	        android:layout_width="fill_parent"
+	        android:layout_width="354dp"
 	        android:layout_height="wrap_content"
 	        android:ems="10"
 	        android:maxLines="2"
 	        android:hint="Nombre del Medicamento" >
 	    </EditText>
-	    
-	    <CheckBox
-	        android:id="@+id/sound_cb"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text="Reproducir Sonido" />
-	
-	    <ToggleButton
+
+		<ToggleButton
 	        android:id="@+id/toggleButton1"
 	        android:layout_width="150dp"
 	        android:layout_height="wrap_content"
@@ -42,35 +36,41 @@
 	    <ViewSwitcher
 	        android:id="@+id/view_switcher"
 	        android:layout_width="fill_parent"
-	        android:layout_height="wrap_content"
-	        android:background="#004ed0"
+	        android:layout_height="match_parent"
+	        android:background="#2a7aff"
 	        android:paddingTop="10dip"
 	        android:paddingLeft="5dip"
-	        android:paddingRight="5dip" >
-	        
-	        <include layout="@layout/include_onetime" 
-	            android:layout_width="fill_parent" 
-	            android:layout_height="fill_parent" />        
-	        
-	        <include layout="@layout/include_repeating" 
-	            android:layout_width="fill_parent" 
-	            android:layout_height="fill_parent" />
-	        
-	    </ViewSwitcher>
+	        android:paddingRight="5dip"
+			android:animateFirstView="false">
 
-	    <LinearLayout
+			<include layout="@layout/include_onetime"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+			<include layout="@layout/include_repeating"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent" />
+
+		</ViewSwitcher>
+
+		<CheckBox
+            android:id="@+id/sound_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reproducir Sonido" />
+
+		<LinearLayout
 	        android:layout_width="fill_parent"
-	        android:layout_height="95dp"
+	        android:layout_height="46dp"
 	        android:background="#004ed0"
 	        android:gravity="center"
 			android:weightSum="1">
 			<ImageButton
 			    android:layout_width="wrap_content"
-			    android:layout_height="81dp"
+			    android:layout_height="fill_parent"
 			    android:background="@null"
 			    android:onClick="create"
-			    android:src="@drawable/ok"
-				android:layout_weight="0.14" /> //Cambiar imagen del botón
+			    android:src="@drawable/ok" /> //Cambiar imagen del botón
 	    </LinearLayout>	    
 	
 	</LinearLayout>

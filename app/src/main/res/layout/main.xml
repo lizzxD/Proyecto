@@ -118,7 +118,7 @@
 		          android:layout_height="fill_parent"
 		          android:gravity="center"
 		          android:textColor="#777777"
-		          android:text="Sin datos" />
+		          android:text="No hay medicamentos pendientes" />
 	            
 	</LinearLayout>
 

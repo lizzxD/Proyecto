@@ -86,7 +86,7 @@ public class AddAlarmActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("Nuevo Recodatorio");
+        setTitle("Nuevo Recordatorio");
         setContentView(R.layout.add);
         findViews();
         db = RemindMePills.db;
