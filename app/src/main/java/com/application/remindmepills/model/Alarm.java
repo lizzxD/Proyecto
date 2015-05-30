@@ -1,15 +1,15 @@
-package com.appsrox.remindme.model;
-
-import java.util.List;
+package com.application.remindmepills.model;
 
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.appsrox.remindme.Util;
+import com.application.remindmepills.Util;
+
+import java.util.List;
 
 /**
- * @author appsrox.com
+ * @author application.com
  *
  */
 public class Alarm extends AbstractModel {

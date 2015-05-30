@@ -4,7 +4,7 @@
     <PreferenceCategory android:title="Opciones de Pantalla">
         
 		<ListPreference android:key="time_option"
-		    android:title="Display Time"
+		    android:title="Mostrar Tiempo"
 		    android:summary="Actual"
 		    android:entries="@array/time_option_arr"
 			android:entryValues="@array/val_arr"

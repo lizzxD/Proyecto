@@ -1,4 +1,4 @@
-package com.appsrox.remindme;
+package com.application.remindmepills;
 
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
@@ -11,7 +11,7 @@ import android.preference.Preference;
 import android.preference.PreferenceActivity;
 
 /**
- * @author appsrox.com
+ *
  *
  */
 public class SettingsActivity extends PreferenceActivity implements OnSharedPreferenceChangeListener {

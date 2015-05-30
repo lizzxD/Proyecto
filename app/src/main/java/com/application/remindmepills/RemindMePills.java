@@ -1,14 +1,14 @@
-package com.appsrox.remindme;
+package com.application.remindmepills;
 
 import android.app.Application;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.preference.PreferenceManager;
 
-import com.appsrox.remindme.model.DbHelper;
+import com.application.remindmepills.model.DbHelper;
 
 /**
- * @author appsrox.com
+ *
  *
  */
 public class RemindMePills extends Application {

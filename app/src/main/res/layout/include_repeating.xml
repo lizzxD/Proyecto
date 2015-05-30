@@ -113,7 +113,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/spinner2"
             android:layout_toRightOf="@id/spinner2"
-            android:text="of"
+            android:text="del"
             android:textColor="#ffffff" />
         <Spinner
             android:id="@+id/spinner3"

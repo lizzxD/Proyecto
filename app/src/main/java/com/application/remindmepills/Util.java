@@ -1,11 +1,11 @@
-package com.appsrox.remindme;
+package com.application.remindmepills;
 
 import android.graphics.Shader.TileMode;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
-import com.appsrox.remindme.model.DbHelper;
+import com.application.remindmepills.model.DbHelper;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

@@ -1,4 +1,4 @@
-package com.appsrox.remindme;
+package com.application.remindmepills;
 
 import android.app.AlarmManager;
 import android.app.IntentService;
@@ -8,11 +8,11 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.database.Cursor;
 
-import com.appsrox.remindme.model.Alarm;
-import com.appsrox.remindme.model.AlarmMsg;
+import com.application.remindmepills.model.Alarm;
+import com.application.remindmepills.model.AlarmMsg;
 
 /**
- * @author appsrox.com
+ *
  *
  */
 public class AlarmService extends IntentService {

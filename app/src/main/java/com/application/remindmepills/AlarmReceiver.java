@@ -1,4 +1,4 @@
-package com.appsrox.remindme;
+package com.application.remindmepills;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -8,11 +8,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 
-import com.appsrox.remindme.model.Alarm;
-import com.appsrox.remindme.model.AlarmMsg;
+import com.application.remindmepills.model.Alarm;
+import com.application.remindmepills.model.AlarmMsg;
 
 /**
- * @author appsrox.com
+ *
  *
  */
 public class AlarmReceiver extends BroadcastReceiver {
@@ -34,7 +34,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 		Notification n = new Notification(R.drawable.ic_launcher, alarm.getName(), System.currentTimeMillis());
 		PendingIntent pi = PendingIntent.getActivity(context, 0, new Intent(), 0);
 		
-		n.setLatestEventInfo(context, "Remind Me", alarm.getName(), pi);		
+		n.setLatestEventInfo(context, "Recuerde tomarse:", alarm.getName(), pi);
 		if (RemindMePills.isVibrate()) {
 			n.defaults |= Notification.DEFAULT_VIBRATE;
 		}

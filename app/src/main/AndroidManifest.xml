@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.appsrox.remindme"
+    package="com.application.remindmepills"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -10,30 +10,30 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:name=".RemindMePills"
+        android:name="com.application.remindmepills.RemindMePills"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/app_theme" >
         
         <activity
-            android:name=".MainActivity"
+            android:name="com.application.remindmepills.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddAlarmActivity" android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name="com.application.remindmepills.AddAlarmActivity" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.application.remindmepills.SettingsActivity"></activity>
         
-		<receiver android:name=".AlarmSetter">
+		<receiver android:name="com.application.remindmepills.AlarmSetter">
 			<intent-filter>
 				<action android:name="android.intent.action.BOOT_COMPLETED" />
 			</intent-filter>
 		</receiver>
-		<receiver android:name=".AlarmReceiver"></receiver>
+		<receiver android:name="com.application.remindmepills.AlarmReceiver"></receiver>
         
-		<service android:name=".AlarmService"></service>
+		<service android:name="com.application.remindmepills.AlarmService"></service>
         
     </application>
 
