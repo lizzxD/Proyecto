@@ -11,12 +11,12 @@
 		</shape>        
 	</item>
 	
-    <item android:left="50sp">
+    <item android:left="75sp">
 		<shape>
 			<solid 
 			    android:color="@color/inactiv"/>
 			<corners
-			    android:topRightRadius="5dp" />    
+			    android:topRightRadius="5dp" />
 		</shape>    
     </item>
     

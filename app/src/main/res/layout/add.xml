@@ -27,15 +27,17 @@
 	
 	    <ToggleButton
 	        android:id="@+id/toggleButton1"
-	        android:layout_width="wrap_content"
+	        android:layout_width="150dp"
 	        android:layout_height="wrap_content"
 	        android:layout_gravity="center_horizontal"
 	        android:onClick="onClick"
 	        android:background="@drawable/type_selector"
-	        android:padding="10dip"
+	        android:padding="8dip"
 	        android:textColor="#ffffff"        
-	        android:textOn="Una vez   Repetir"
-	        android:textOff="Una vez   Repetir" />
+	        android:textOn="Una vez      Repetir"
+	        android:textOff="Una vez      Repetir"
+			android:textStyle="bold"
+			android:nestedScrollingEnabled="true" />
 	
 	    <ViewSwitcher
 	        android:id="@+id/view_switcher"
@@ -58,15 +60,17 @@
 
 	    <LinearLayout
 	        android:layout_width="fill_parent"
-	        android:layout_height="wrap_content"
+	        android:layout_height="95dp"
 	        android:background="#004ed0"
-	        android:gravity="right" >
+	        android:gravity="center"
+			android:weightSum="1">
 			<ImageButton
 			    android:layout_width="wrap_content"
-			    android:layout_height="wrap_content"
+			    android:layout_height="81dp"
 			    android:background="@null"
 			    android:onClick="create"
-			    android:src="@drawable/ok" /> //Cambiar imagen del botón
+			    android:src="@drawable/ok"
+				android:layout_weight="0.14" /> //Cambiar imagen del botón
 	    </LinearLayout>	    
 	
 	</LinearLayout>
