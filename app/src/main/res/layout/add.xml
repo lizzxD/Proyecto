@@ -43,7 +43,7 @@
 	        android:id="@+id/view_switcher"
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
-	        android:background="#004ed0"
+	        android:background="#2a79ff"
 	        android:paddingTop="10dip"
 	        android:paddingLeft="5dip"
 	        android:paddingRight="5dip" >
