@@ -9,7 +9,7 @@
         android:id="@+id/menu_bar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#5c755e" >
+        android:background="#004ed0" >
 
         <TextView
             android:id="@+id/heading_tv"
@@ -72,7 +72,7 @@
             android:paddingLeft="5dip"
             android:paddingRight="10dip"
 		    android:onClick="onClick"
-		    android:background="@null"
+		    android:background="#004ed0"
 		    android:src="@drawable/left" />
         
 		<TextView 
@@ -81,7 +81,7 @@
 	        android:layout_height="wrap_content"
 	        android:textSize="12sp"
 	        android:textColor="#ffffff" />
-		
+
 		<ImageButton
 		    android:id="@+id/imageButton4"
 		    android:layout_width="wrap_content"
@@ -91,11 +91,11 @@
             android:paddingLeft="10dip"
             android:paddingRight="5dip"
 		    android:onClick="onClick"
-		    android:background="@null"
-		    android:src="@drawable/right" />			    
-	    
+		    android:background="#004ed0"
+		    android:src="@drawable/right" />
+
 	</LinearLayout>
-    
+
 	<LinearLayout
 		android:id="@+id/list_view"
 		android:layout_width="fill_parent"
