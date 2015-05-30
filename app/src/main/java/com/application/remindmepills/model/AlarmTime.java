@@ -1,13 +1,13 @@
-package com.appsrox.remindme.model;
+package com.application.remindmepills.model;
 
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.appsrox.remindme.Util;
+import com.application.remindmepills.Util;
 
 /**
- * @author appsrox.com
+ * @author application.com
  *
  */
 public class AlarmTime extends AbstractModel {

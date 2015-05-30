@@ -66,7 +66,7 @@
 			    android:layout_height="wrap_content"
 			    android:background="@null"
 			    android:onClick="create"
-			    android:src="@drawable/ok" /> //Cambiar imagen del boton
+			    android:src="@drawable/ok" /> //Cambiar imagen del botón
 	    </LinearLayout>	    
 	
 	</LinearLayout>

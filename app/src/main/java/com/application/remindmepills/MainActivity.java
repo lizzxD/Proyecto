@@ -1,7 +1,4 @@
-package com.appsrox.remindme;
-
-import java.util.Calendar;
-import java.util.Date;
+package com.application.remindmepills;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -30,11 +27,14 @@ import android.widget.SimpleCursorAdapter.ViewBinder;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.appsrox.remindme.model.Alarm;
-import com.appsrox.remindme.model.AlarmMsg;
+import com.application.remindmepills.model.Alarm;
+import com.application.remindmepills.model.AlarmMsg;
+
+import java.util.Calendar;
+import java.util.Date;
 
 /**
- * @author appsrox.com
+ *
  *
  */
 public class MainActivity extends ListActivity {
@@ -115,7 +115,7 @@ public class MainActivity extends ListActivity {
 		
 		switch(RemindMePills.getDateRange()) {
 		case 0: // Daily
-			if (date==dt.getDate() && month==dt.getMonth() && year==dt.getYear()+1900) return "Today";
+			if (date==dt.getDate() && month==dt.getMonth() && year==dt.getYear()+1900) return "Hoy";
 			else return date+" "+monthArr[month+1];
 			
 		case 1: // Weekly
@@ -231,7 +231,7 @@ public class MainActivity extends ListActivity {
 	public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
 		if (v.getId() == android.R.id.list) {
 			getMenuInflater().inflate(R.menu.context_menu, menu);
-			menu.setHeaderTitle("Choose an Option");
+			menu.setHeaderTitle("Seleccione una opción");
 			menu.setHeaderIcon(R.drawable.ic_dialog_menu_generic);
 			
 			AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
@@ -300,10 +300,10 @@ public class MainActivity extends ListActivity {
 		switch (id) {
 		case R.id.menu_edit:
 			return new AlertDialog.Builder(this)
-			   .setTitle("Edit")
+			   .setTitle("Editar")
 			   .setView(getLayoutInflater().inflate(R.layout.edit, null))
 		       .setCancelable(false)
-		       .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+		       .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
 		           public void onClick(DialogInterface dialog, int id) {
 		        	   Dialog d = (Dialog) dialog;
 		        	   EditText msgEdit = (EditText) d.findViewById(R.id.msg_et);
@@ -319,11 +319,11 @@ public class MainActivity extends ListActivity {
 							adapter.notifyDataSetChanged();
 			        	   
 		        	   } else {
-		        		   Toast.makeText(MainActivity.this, "Enter a message", Toast.LENGTH_SHORT).show();
+		        		   Toast.makeText(MainActivity.this, "Ingrese el nombre del medicamento", Toast.LENGTH_SHORT).show();
 		        	   }
 		           }
 		       })
-		       .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+		       .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
 		           public void onClick(DialogInterface dialog, int id) {
 		                dialog.cancel();
 		           }

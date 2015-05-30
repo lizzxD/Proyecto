@@ -1,11 +1,11 @@
-package com.appsrox.remindme;
+package com.application.remindmepills;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
 /**
- * @author appsrox.com
+ *
  *
  */
 public class AlarmSetter extends BroadcastReceiver {

@@ -1,8 +1,4 @@
-package com.appsrox.remindme.model;
-
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
+package com.application.remindmepills.model;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -10,18 +6,22 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.appsrox.remindme.RemindMePills;
-import com.appsrox.remindme.Util;
+import com.application.remindmepills.RemindMePills;
+import com.application.remindmepills.Util;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
- * @author appsrox.com
+ * @author application.com
  *
  */
 public class DbHelper extends SQLiteOpenHelper {
 	
 //	private static final String TAG = "DbHelper";
 
-	public static final String DB_NAME = "remindme.db";
+	public static final String DB_NAME = "remindmepills.db";
 	public static final int DB_VERSION = 1;
 	
 	public static final SimpleDateFormat sdf = new SimpleDateFormat(RemindMePills.DEFAULT_DATE_FORMAT);

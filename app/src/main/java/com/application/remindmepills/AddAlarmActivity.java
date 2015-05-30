@@ -1,4 +1,4 @@
-package com.appsrox.remindme;
+package com.application.remindmepills;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
@@ -23,17 +23,17 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 import android.widget.ViewSwitcher;
 
-import com.appsrox.remindme.model.Alarm;
-import com.appsrox.remindme.model.AlarmMsg;
-import com.appsrox.remindme.model.AlarmTime;
-import com.appsrox.remindme.model.DbHelper;
+import com.application.remindmepills.model.Alarm;
+import com.application.remindmepills.model.AlarmMsg;
+import com.application.remindmepills.model.AlarmTime;
+import com.application.remindmepills.model.DbHelper;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 /**
- * @author appsrox.com
+ * @author application.com
  *
  */
 public class AddAlarmActivity extends Activity {
@@ -169,26 +169,26 @@ public class AddAlarmActivity extends Activity {
 	private boolean validate() {
 		if (TextUtils.isEmpty(msgEdit.getText())) {
 			msgEdit.requestFocus();
-			Toast.makeText(this, "Enter a message", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "Ingrese el nombre del medicamento", Toast.LENGTH_SHORT).show();
 			return false;
 		}
 		if (vs.getDisplayedChild() == 1) {
 			if (TextUtils.isEmpty(fromdateText.getText())) {
-				Toast.makeText(this, "Specify from date", Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, "Ingresa la fecha de inicio", Toast.LENGTH_SHORT).show();
 				return false;
 			}
 			if (TextUtils.isEmpty(todateText.getText())) {
-				Toast.makeText(this, "Specify to date", Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, "Ingresa la fecha final", Toast.LENGTH_SHORT).show();
 				return false;
 			}
 			try {
 				if (sdf.parse(fromdateText.getText().toString()).after(sdf.parse(todateText.getText().toString()))) {
-					Toast.makeText(this, "From date is after To date!", Toast.LENGTH_SHORT).show();
+					Toast.makeText(this, "La fecha inicial es después de la fecha final 'PENDEJO' ", Toast.LENGTH_SHORT).show();
 					return false;
 				}
 			} catch (ParseException e) {}			
 			if (TextUtils.isEmpty(attimeText.getText())) {
-				Toast.makeText(this, "Specify time", Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, "Ingresa la hora", Toast.LENGTH_SHORT).show();
 				return false;
 			}			
 		}
