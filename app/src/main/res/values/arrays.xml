@@ -22,37 +22,37 @@
     
     <string-array name="spinner1_arr">
         <item>Cada</item>
-        <item>1st</item>
-        <item>2nd</item>
-        <item>3rd</item>
-        <item>4th</item>
-        <item>5th</item>
-        <item>6th</item>
-        <item>7th</item>
-        <item>8th</item>
-        <item>9th</item>
-        <item>10th</item>
-        <item>11th</item>
-        <item>12th</item>
-        <item>13th</item>
-        <item>14th</item>
-        <item>15th</item>
-        <item>16th</item>
-        <item>17th</item>
-        <item>18th</item>
-        <item>19th</item>
-        <item>20th</item>
-        <item>21st</item>
-        <item>22nd</item>
-        <item>23rd</item>
-        <item>24th</item>
-        <item>25th</item>
-        <item>26th</item>
-        <item>27th</item>
-        <item>28th</item>
-        <item>29th</item>
-        <item>30th</item>
-        <item>31st</item>
+        <item>1ero.</item>
+        <item>2ndo.</item>
+        <item>3ero.</item>
+        <item>4to.</item>
+        <item>5to.</item>
+        <item>6to.</item>
+        <item>7to.</item>
+        <item>8vo.</item>
+        <item>9no.</item>
+        <item>10mo.</item>
+        <item>11ero.</item>
+        <item>12ndo.</item>
+        <item>13ero.</item>
+        <item>14to.</item>
+        <item>15to.</item>
+        <item>16to.</item>
+        <item>17mo.</item>
+        <item>18vo.</item>
+        <item>19no.</item>
+        <item>20mo</item>
+        <item>21ero</item>
+        <item>22ndo</item>
+        <item>23ero</item>
+        <item>24to</item>
+        <item>25to</item>
+        <item>26to</item>
+        <item>27mo</item>
+        <item>28vo</item>
+        <item>29no</item>
+        <item>30mo</item>
+        <item>31ero</item>
         <!--item>Last</item-->
     </string-array>
     
@@ -64,7 +64,7 @@
         <item>Mie</item>
         <item>Jue</item>
         <item>Vie</item>
-        <item>Sáb</item>
+        <item>Sab</item>
     </string-array>
     
     <string-array name="spinner3_arr">
