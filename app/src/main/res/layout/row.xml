@@ -51,6 +51,14 @@
         android:layout_below="@id/msg_tv"
         android:paddingTop="5sp"
         android:textColor="#777777"
-        android:textSize="12sp" />    
+        android:textSize="12sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/time_tv"
+        android:layout_alignRight="@+id/time_tv"
+        android:layout_alignEnd="@+id/time_tv" />
 
 </RelativeLayout>
